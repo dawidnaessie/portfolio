@@ -124,7 +124,7 @@ export default function LandingAlphaPage() {
         <Section subdued>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4">The Challenge</Badge>
+              <Badge className="mb-4 mt-4">The Challenge</Badge>
               <h2 className="text-3xl font-bold mb-4">Traditional Hosting is Broken</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Complex configurations, slow deployments, and unpredictable scaling make traditional hosting a
@@ -146,7 +146,7 @@ export default function LandingAlphaPage() {
               </ul>
             </div>
             <div className="glass rounded-2xl p-8 glow">
-              <Badge className="mb-4">The Solution</Badge>
+              <Badge className="mb-2">The Solution</Badge>
               <h3 className="text-2xl font-bold mb-4">Deploy with Confidence</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Our platform handles all the complexity so you can focus on building great products. Push your code and
@@ -158,9 +158,9 @@ export default function LandingAlphaPage() {
 
         {/* Social Proof */}
         <Section>
-          <div className="text-center mb-12">
-            <Badge className="mb-4">Trusted By</Badge>
-            <h2 className="text-2xl font-bold mb-8">Used by Leading Teams</h2>
+          <div className="text-center mb-8">
+            <Badge className="mt-2 mb-2">Trusted By</Badge>
+            <h2 className="text-2xl font-bold mb-4">Used by Leading Teams</h2>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-50">
             {["Company A", "Company B", "Company C", "Company D", "Company E"].map((company) => (
@@ -173,8 +173,8 @@ export default function LandingAlphaPage() {
 
         {/* Pricing Section */}
         <Section id="pricing" subdued>
-          <div className="text-center mb-12">
-            <Badge className="mb-4">Pricing</Badge>
+          <div className="text-center mb-8">
+            <Badge className="mt-2 mb-2">Pricing</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Choose the plan that fits your needs. All plans include core features.
@@ -227,7 +227,7 @@ export default function LandingAlphaPage() {
         {/* FAQ Section */}
         <Section id="faq">
           <div className="text-center mb-12">
-            <Badge className="mb-4">FAQ</Badge>
+            <Badge className="mt-8 mb-4">FAQ</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
           </div>
 

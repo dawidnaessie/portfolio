@@ -123,7 +123,7 @@ export default function PortfolioGammaPage() {
         ]}
       />
 
-      <DebugTheme />
+     {/*<DebugTheme />*/}
 
       <main className="pt-24">
         {/* Hero Section */}
@@ -200,7 +200,7 @@ export default function PortfolioGammaPage() {
         {/* About Section */}
         <Section id="about">
           <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="grid md:grid-cols-2 gap-12 items-start mt-8 mb-8">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
