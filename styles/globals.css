@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Base (default) theme */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -39,6 +40,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* Dark mode */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -72,6 +74,34 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* Custom landing page themes (apply to html so they override .dark variables) */
+html[data-theme='alpha'] {
+  --background: #f0f9ff;
+  --foreground: #0f172a;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --primary: #1d4ed8;
+  --primary-foreground: #ffffff;
+}
+
+html[data-theme='beta'] {
+  --background: #fff7ed;
+  --foreground: #422006;
+  --accent: #f59e0b;
+  --accent-foreground: #ffffff;
+  --primary: #b45309;
+  --primary-foreground: #ffffff;
+}
+
+html[data-theme='gamma'] {
+  --background: #faf5ff;
+  --foreground: #2e1065;
+  --accent: #a855f7;
+  --accent-foreground: #ffffff;
+  --primary: #6b21a8;
+  --primary-foreground: #ffffff;
 }
 
 @theme inline {
