@@ -7,6 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Section } from "@/components/section"
 import { Badge } from "@/components/badge"
+import DebugTheme from "@/components/debug-theme"
 import { ExternalLink, Mail, CheckCircle2 } from "lucide-react"
 
 export default function PortfolioGammaPage() {
@@ -121,6 +122,8 @@ export default function PortfolioGammaPage() {
           { href: "#contact", label: "Contact" },
         ]}
       />
+
+      <DebugTheme />
 
       <main className="pt-24">
         {/* Hero Section */}
