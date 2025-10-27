@@ -14,67 +14,67 @@ export default function PortfolioGammaPage() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
 
-  const projects = [
+    const projects = [
     {
       title: "E-Commerce Platform",
       description: "Full-stack marketplace with payment integration",
-      image: "/ecommerce-platform-interface.png",
+      image: "/gamma-images/ecommerce-platform-interface.png",
       tags: ["Next.js", "Stripe", "PostgreSQL"],
       link: "#",
     },
     {
       title: "Analytics Dashboard",
       description: "Real-time data visualization and reporting",
-      image: "/analytics-dashboard-charts.png",
+      image: "/gamma-images/analytics-dashboard-charts.png",
       tags: ["React", "D3.js", "Node.js"],
       link: "#",
     },
     {
       title: "Mobile Banking App",
       description: "Secure financial management application",
-      image: "/mobile-banking-app.png",
+      image: "/gamma-images/mobile-banking-app.png",
       tags: ["React Native", "TypeScript", "Firebase"],
       link: "#",
     },
     {
       title: "Content Management System",
       description: "Headless CMS with custom workflows",
-      image: "/cms-interface.jpg",
+      image: "/gamma-images/cms-interface.jpg",
       tags: ["Next.js", "Sanity", "Tailwind"],
       link: "#",
     },
     {
       title: "Social Media Platform",
       description: "Community-driven content sharing network",
-      image: "/social-media-feed.jpg",
+      image: "/gamma-images/social-media-feed.jpg",
       tags: ["Next.js", "Supabase", "Redis"],
       link: "#",
     },
     {
       title: "AI Writing Assistant",
       description: "GPT-powered content generation tool",
-      image: "/ai-writing-interface.jpg",
+      image: "/gamma-images/ai-writing-interface.jpg",
       tags: ["Next.js", "OpenAI", "Vercel AI"],
       link: "#",
     },
     {
       title: "Project Management Tool",
       description: "Collaborative workspace for teams",
-      image: "/project-management-kanban.png",
+      image: "/gamma-images/project-management-kanban.png",
       tags: ["React", "GraphQL", "PostgreSQL"],
       link: "#",
     },
     {
       title: "Video Streaming Service",
       description: "On-demand video platform with live streaming",
-      image: "/video-streaming-platform.jpg",
+      image: "/gamma-images/video-streaming-platform.jpg",
       tags: ["Next.js", "AWS", "WebRTC"],
       link: "#",
     },
     {
       title: "Fitness Tracking App",
       description: "Health and workout monitoring application",
-      image: "/fitness-tracking-app-interface.png",
+      image: "/gamma-images/fitness-tracking-app-interface.png",
       tags: ["React Native", "HealthKit", "Charts"],
       link: "#",
     },
@@ -171,7 +171,7 @@ export default function PortfolioGammaPage() {
               >
                 <div className="aspect-video overflow-hidden bg-muted">
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={project.image || "/gamma-images/placeholder.svg"}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
