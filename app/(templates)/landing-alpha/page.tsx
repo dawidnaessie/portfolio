@@ -5,6 +5,7 @@ import { FeatureGrid } from "@/components/feature-grid"
 import { Section } from "@/components/section"
 import { Badge } from "@/components/badge"
 import { Check } from "lucide-react"
+import DebugTheme from "@/components/debug-theme"
 
 export const metadata = {
   title: "Landing Alpha - Neon Glass Design",
@@ -267,6 +268,8 @@ export default function LandingAlphaPage() {
       </main>
 
       <Footer />
+      {/* Debug overlay to inspect the effective html.class, html[data-theme], and key CSS variables */}
+      {/*<DebugTheme />*/}
     </div>
   )
 }

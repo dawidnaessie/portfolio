@@ -187,10 +187,57 @@ html[data-theme='alpha'] {
   --radius: 0.375rem;
   --shadow: 0px 1px 2px 0px #0000000d;
 
-  /* alpha: primary button hover (light blue) — targets utilities using bg-primary */
-  .bg-primary:hover {
-    background-color: #60a5fa !important;
-  }
+  /* Glassmorphism & neon accents for Alpha */
+  /* Use a translucent card by default so elements have that frosted glass look */
+  --card: rgba(255,255,255,0.64);
+  --card-foreground: #111827; /* dark text on translucent card */
+  --card-border: rgba(99,102,241,0.12);
+
+  /* Neon accent intensities */
+  --neon-primary: rgba(59,130,246,0.9);
+  --neon-glow: rgba(99,102,241,0.18);
+}
+
+/* Alpha-specific component overrides to create glass + neon effects */
+html[data-theme='alpha'] .bg-card {
+  background-color: var(--card) !important;
+  color: var(--card-foreground) !important;
+  border-color: var(--card-border) !important;
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  box-shadow: 0 6px 24px rgba(99,102,241,0.06);
+}
+
+html[data-theme='alpha'] .card,
+html[data-theme='alpha'] .bg-card,
+html[data-theme='alpha'] .p-6.rounded-xl {
+  border-radius: 1rem;
+}
+
+html[data-theme='alpha'] .text-primary,
+html[data-theme='alpha'] .text-primary * {
+  color: var(--neon-primary) !important;
+  text-shadow: 0 0 8px rgba(59,130,246,0.45), 0 0 24px rgba(124,58,237,0.12);
+}
+
+/* Neon glow for icons */
+html[data-theme='alpha'] .w-12.h-12,
+html[data-theme='alpha'] .icon {
+  filter: drop-shadow(0 6px 18px rgba(59,130,246,0.16));
+}
+
+/* Primary button hover: lighter blue + subtle glow */
+html[data-theme='alpha'] .bg-primary:hover,
+html[data-theme='alpha'] .group:hover .bg-primary {
+  background-color: #60a5fa !important;
+  box-shadow: 0 10px 30px rgba(59,130,246,0.14), 0 0 30px rgba(99,102,241,0.06);
+  transform: translateY(-1px);
+}
+
+/* Ensure gradient overlays blend nicely with glass */
+html[data-theme='alpha'] .bg-gradient-to-br {
+  mix-blend-mode: screen;
+  opacity: 0.9;
 }
 
 html[data-theme='beta'] {
