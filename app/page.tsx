@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ArrowRight, Sparkles, FileText, Briefcase } from "lucide-react"
-
+import ThemeToggle from "@/components/toggleButton"
 export default function HomePage() {
   const templates = [
     {
@@ -40,6 +40,8 @@ export default function HomePage() {
           <Link href="/" className="text-xl font-bold">
             Templates
           </Link>
+          
+          <ThemeToggle />
         </div>
       </header>
 
